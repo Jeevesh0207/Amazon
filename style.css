@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* 
+|---------------------------
+|         Header            
+|---------------------------
+*/
+
+:root{
+    --header_height:48px;
+}
+
+.header{
+   width: 100%;
+   background-color:  #00050d;
+   min-height: var(--header_height);
+   display: flex;
+   justify-content: center;
+   
+}
+.header .head_navbar{
+    position: fixed;
+    
+    min-width: 60%;
+    min-height: var(--header_height);
+    /* background-color:  #0085ad; */
+    background-color:  #00050d;
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+    border-radius: 10px;
+    z-index: 1;
+}
+.header .head_navbar .navbar{
+   min-height: var(--header_height);
+   /* background-color: antiquewhite; */
+   /* border: 1px solid blue; */
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   
+}
+.header .head_navbar .box1{
+    min-width: 100px;
+    /* background-color: magenta; */
+    display: none;
+}
+.header .head_navbar .box2{
+    min-width: 180px;
+    /* background-color: palevioletred; */
+}
+
+.header .head_navbar .box4{
+  min-width: 317px;   
+}
+
+.header .head_navbar .navbar ul{
+    list-style: none;
+    display: flex;
+    
+}
+.header .head_navbar .navbar ul li{
+    min-height: var(--header_height);
+    padding: 0 16px 0 16px;
+    
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* background-color: aliceblue; */
+}
+.header .head_navbar .navbar ul li a{
+    min-height: var(--header_height);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #aaaaaa;
+}
+.header .head_navbar .navbar ul li  ion-icon{
+    font-size: 20px;
+    color: #aaaaaa;
+}
+.header .head_navbar .navbar ul li:hover{
+    background-color: #323232;
+    color: #ffffff;
+}
+.header .head_navbar .box2 ul li:hover {
+    background-color:#00050d;
+}
+.header .head_navbar .navbar ul li:hover a{
+    
+    color: #ffffff;
+}
+.header .head_navbar .navbar ul li:hover ion-icon{
+    
+    color: #ffffff;
+}
+.header .head_navbar .box2 img{
+    min-width: 104px;
+    height: 19.5px;
+    padding: 0 16px 0 16px;
+}
+.header .head_navbar .box3{
+    min-width: 300px;
+    
+    /* background-color: aquamarine; */
+}
+.header .head_navbar .box4 ul li:nth-of-type(1) ion-icon{
+   font-size: 25px;
+}
+.header .head_navbar .box4 ul li img{
+    width: 30px;
+    height: 30px;
+    
+}
+.header .head_navbar .box4 ul li:nth-last-child(1){
+    padding: 0 21px 0 16px;
+    border-radius: 0 10px 10px 0;
+}
+@media screen and (max-width:800px) {
+    .header .head_navbar{
+        border-radius: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .header .head_navbar .box1{
+        display: block;
+    }
+    .header .head_navbar .box3{
+        display: none;
+    }
+    .header .head_navbar .box4{
+        min-width: 100px;
+    }
+    .header .head_navbar .box4 ul li:nth-child(2){
+        display: none;
+    }
+    .header .head_navbar .box4 ul li:nth-child(3){
+        display: none;
+    }
+    .header .head_navbar .box2{
+        min-width: 140px;
+        
+    }
+    .header .head_navbar .box4 ul li:nth-last-child(1){
+        
+        border-radius: 0 ;
+    }
+}
+
+/* 
+|---------------------------
+|         Main           
+|---------------------------
+*/
+
+/*! --------------Container1-------------- */
+
+.main .container1{
+    width: 100%;
+    min-height: 575px;
+    position: relative;
+}
+
+.main .container1 .container1_bg{
+    width: 100%;
+    min-height: 575px;
+    background-image: linear-gradient( to right, #000 40%, transparent 58% ),url(img/MLP.jpg);
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width:800px) {
+    .main .container1 .container1_bg{
+        background-image:linear-gradient(to top, #000 5%, transparent 20%), url(img/MLP_small.jpg);
+        background-position: center top ;
+        min-height: 303px;
+       
+    }
+}
+
+.main .container1 .container1_info{
+    width:648px;
+    min-height: 350px;
+    
+    /* background-color: lightpink; */
+    position: absolute;
+    inset: 10% 0 10% 5%;
+    padding: 70px 0 0 70px;
+    color: #ffffff;
+    
+}
+
+.main .container1 .container1_info h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 350;
+  font-size: 45px;
+  padding-bottom: 25px;
+}
+.main .container1 .container1_info p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.main .container1 .container1_info button{
+    font-size: 16px;
+    font-weight: 350;
+    padding: 14px 60px;
+    background-color: #0f79a6;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+@media screen and (max-width:1115px) {
+    .main .container1 .container1_info{
+        padding: 40px 0 0 30px;
+    }
+}
+@media screen and (max-width:900px) {
+    .main .container1 .container1_info{
+        padding: 40px 0 0 20px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .main .container1 .container1_info{
+        width: 100%;
+        position: relative;
+        left: 0;
+        
+        padding: 50px;
+        box-sizing: border-box;
+        text-align: center;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        /* justify-content: center; */
+        background-color: #00050d ;
+        
+        color: #ffffff;
+        
+    }
+    .main .container1 .container1_info h2{
+        font-size: 35px;
+        /* font-weight: bold; */
+        padding-bottom: 20px;
+        text-align: center;
+      }
+      .main .container1 .container1_info p{
+          font-size: 25px;
+          padding-bottom: 20px;
+          text-align: center;
+      }
+      .main .container1 .container1_info button{
+        width: 100%;
+        font-size: 15px;
+        padding: 14px ;
+        
+
+      } 
+      
+}
+
+/*! ----------------------------------------- */
+
+/*! --------------Container2-------------- */
+
+
+.main .container2{
+    width: 100%;
+    min-height: 575px;
+    /* background-color: lightcoral; */
+    position: relative;
+}
+
+.main .container2 .container2_bg{
+    width: 100%;
+    min-height: 575px;
+    background-image: linear-gradient(to left,#000 45%,transparent 58%),url(img/TVOD_MLP_Left.jpg);
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:800px) {
+    .main .container2 .container2_bg{
+        background-image:linear-gradient(to top, #000 5%, transparent 20%), url(img/TVOD_MLP_Right..jpg);
+        background-position: center top;
+        min-height: 302px;
+    }
+}
+
+.main .container2 .container2_info{
+   width: 648px;
+   min-height: 350px;
+   /* background-color: lightcyan; */
+   color: #ffffff;
+   position: absolute;
+   top: 20%;
+   right: 7%;
+   padding: 70px 0 0 70px;
+}
+
+.main .container2 .container2_info h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 25px;
+  }
+  .main .container2 .container2_info p{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+      font-size: 25px;
+      padding-bottom: 20px;
+  }
+  .main .container2 .container2_info button{
+      font-size: 16px;
+      font-weight: 350;
+      padding: 15px 95px;
+      background-color: #0f79a6;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+  }
+
+  @media screen and (max-width:1115px) {
+    .main .container2 .container2_info{
+        padding: 70px 0 0 100px;
+    }
+}
+@media screen and (max-width:900px) {
+    .main .container2 .container2_info{
+        padding: 70px 0 0 150px;
+    }
+}
+  @media screen and (max-width:800px) {
+    .main .container2 .container2_info{
+        width: 100%;
+        position: relative;
+        right: 0;
+        padding: 50px;
+        color: #ffffff;
+        background-color: #00050d;
+        text-align: center;
+    }
+    .main .container2 .container2_info button{
+        width: 100%;
+    }
+  }
+
+/*! ----------------------------------------- */
+
+/*! --------------Container3-------------- */
+
+.main .container3{
+    width: 100%;
+    min-height: 575px;
+    /* background-color: lightcoral; */
+    display: flex;
+}
+.main .container3 .container3_box1{
+    width: 50%;
+    min-height: 575px;
+    /* background-color: yellowgreen; */
+    padding: 100px 0 0 50px;
+}   
+.main .container3 .container3_box2{
+    width: 50%;
+    min-height: 575px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.main .container3 .container3_box1 h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 25px;
+  }
+  .main .container3 .container3_box1  p{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+      font-size: 25px;
+      padding-bottom: 20px;
+  }
+
+  .main .container3 .container3_box2 .item{
+      height: 144px;
+      width: 200px;
+      background-color: #0f79a6;
+      margin: 6px;
+      background-position: center;
+      background-size: contain;
+      transition: all 0.3s;
+  }
+
+
+  .main .container3 .container3_box2 .item:hover{
+    box-shadow: 0 0 10px #000;
+    transform: scale(1.05);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(1){
+    background-image: url(img/G-1.jpg);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(2){
+    background-image: url(img/G-2.jpg);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(3){
+    background-image: url(img/G-3.jpg);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(4){
+    background-image: url(img/G-4.jpg);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(5){
+    background-image: url(img/G-5.jpg);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(6){
+    background-image: url(img/G-6.png);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(7){
+    background-image: url(img/G-7.png);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(8){
+    background-image: url(img/G-8.jpg);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(9){
+    background-image: url(img/G-9.jpg);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(10){
+    background-image: url(img/G-10.png);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(11){
+    background-image: url(img/G-11.png);
+  }
+  .main .container3 .container3_box2 .item:nth-of-type(12){
+    background-image: url(img/G-12.png);
+  }
+
+@media screen and (max-width:1000px) {
+    .main .container3{
+        flex-direction: column;
+    }
+    .main .container3 .container3_box1{
+        width: 100%;
+        min-height: 300px;
+        padding: 30px;
+        text-align: center;
+    }
+    .main .container3 .container3_box2 {
+        width: 100%;
+        min-height: 100px;
+        padding:0;
+        margin-bottom: 15px;
+
+    }
+    .main .container3 .container3_box2 .item{
+        /* width: 100%; */
+        margin: 3px;
+    }
+}  
+
+@media screen and (max-width:400px){
+    .main .container3 .container3_box2 .item{
+        height: 100px;
+        width: 120px;
+        
+        margin: 10px;
+    }
+}
+
+/*! ----------------------------------------- */
+
+/*! --------------Container4-------------- */
+
+.main .container4{
+    width: 100%;
+    min-height: 575px;
+    /* background-color: lightcoral; */
+    position: relative;
+    
+}
+.main .container4 .container4_bg{
+    width: 100%;
+    min-height: 575px;
+    background-image: linear-gradient(to left,#000 40%,transparent 56%),url(img/MLP_Template_Image_Left.jpg);
+    background-position: left top;
+    background-size: cover;
+}
+
+@media screen and (max-width:800px) {
+    .main .container4 .container4_bg{
+        background-image: linear-gradient(to top,#000 15%,transparent 50%), url(img/MLP_Template_Image_Left_1.jpg);
+        background-position: center top;
+        min-height: 353px;
+    }
+}
+.main .container4 .container4_info{
+    width: 648px;
+    min-height: 350px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    color: #ffffff;
+    padding: 70px 0 0 50px;
+
+}
+
+.main .container4 .container4_info h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 25px;
+  }
+  .main .container4 .container4_info p{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+      font-size: 20px;
+      padding-bottom: 50px;
+  }
+  .main .container4 .container4_info button{
+      font-size: 16px;
+      font-weight: 350;
+      padding: 15px 95px;
+      background-color: #0f79a6;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+  }
+
+
+  @media screen and (max-width:1200px) {
+    .main .container4 .container4_info{
+        padding: 70px 0 0 70px;
+    }
+  }  
+@media screen and (max-width:800px) {
+    .main .container4 .container4_info{
+        position: relative;
+        width: 100%;
+        right: 0;
+        padding: 40px;
+        text-align: center;
+        background-color: #00050d;
+    }
+    .main .container4 .container4_info button{
+        width: 100%;
+    }
+}
+
+/*! ----------------------------------------- */
+
+/*! --------------Container5-------------- */
+
+.main .container5{
+    width: 100%;
+    min-height: 575px;
+    background-color: lightcoral;
+    position: relative;
+    
+}
+
+.main .container5 .container5_bg{
+    width: 100%;
+    min-height: 575px;
+    background-image: linear-gradient(to right,#000 40%, transparent 56%),url(img/IN-kids-30Jan._CB1517304519_.jpg);
+    background-position: right top;
+    background-size: cover;
+}
+
+@media screen and (max-width:800px) {
+    .main .container5 .container5_bg{
+        background-image: linear-gradient(to top, #000 15%,transparent 50%),url(img/IN-kids-30Jan.mobi.jpg);
+        min-height: 350px;
+    }
+}
+
+.main .container5 .container5_info{
+    width: 648px;
+    min-height: 380px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 15%;
+    left: 5%; 
+    padding: 70px 0 10px 40px;
+    color: #ffffff;
+}
+
+.main .container5 .container5_info h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 25px;
+  }
+  .main .container5 .container5_info p{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+      font-size: 20px;
+      padding-bottom: 50px;
+  }
+  .main .container5 .container5_info button{
+      font-size: 16px;
+      font-weight: 350;
+      padding: 15px 95px;
+      background-color: #0f79a6;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+  }
+
+
+  @media screen and (max-width:800px) {
+    .main .container5 .container5_info{
+        position: relative;
+        width: 100%;
+        left: 0;
+        padding: 40px;
+        text-align: center;
+        background-color: #00050d;
+        color: #ffffff;
+    }
+    .main .container5 .container5_info button{
+        width: 100%;
+    }
+}
+
+/*! ----------------------------------------- */
+
+/*! --------------Foooter-------------- */
+
+.footer{
+    width: 100%;
+    min-height: 119px;
+    background-color: #222222;
+    padding: 30px;
+    text-align: center;
+}
+.footer .foot_link p{
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: 300;
+    color: #0f79a6;
+}
+.footer p{
+    font-weight: 300;
+    padding: 10px 0 5px 0;
+    color: #949494;
+}
+
+@media screen and (max-width:800px) {
+    .footer p{
+        font-size: 13px;
+    }
+}
+
+.main button{
+    cursor: pointer;
+}
+
+.main .container1 .container1_info button:hover{
+    background-color: #00a0d6;
+ }
+ .main .container2 .container2_info button:hover{
+    background-color: #00a0d6;
+ }
+ .main .container3 .container3_info button:hover{
+    background-color: #00a0d6;
+ }
+ .main .container4 .container4_info button:hover{
+    background-color: #00a0d6;
+ }
+
+.main .container5 .container5_info button:hover{
+   background-color: #00a0d6;
+}
+

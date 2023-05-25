@@ -37,6 +37,7 @@
     justify-content: space-between;
     border-radius: 10px;
     z-index: 1;
+    transition: all 0.5s;
 }
 .header .head_navbar .navbar{
    min-height: var(--header_height);
@@ -650,8 +651,8 @@
     padding: 30px;
     text-align: center;
 }
-.footer .foot_link p{
-    display: inline-block;
+.footer .foot_link span{
+    /* display: inline-block; */
     padding: 0 10px;
     font-weight: 300;
     color: #0f79a6;
@@ -663,7 +664,7 @@
 }
 
 @media screen and (max-width:800px) {
-    .footer p{
+    .footer span{
         font-size: 13px;
     }
 }
